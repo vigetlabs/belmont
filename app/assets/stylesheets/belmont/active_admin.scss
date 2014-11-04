@@ -1,0 +1,82 @@
+$gray: #6a7176;
+$dark-gray: #42474b;
+$green: #77aa78;
+$light-green: #ccdfcd;
+$red: #d70014;
+
+// Set editor background to white
+.st-outer {
+  background-color: #fff;
+}
+
+// Fix delete control styles
+.st-block__delete-label {
+  float: none;
+  width: auto;
+}
+
+// Remove underlines on UI links
+.st-block-control,
+.st-block-ui-btn {
+  text-decoration: none;
+}
+
+// Fix styles on format bar
+.st-format-bar {
+  font-size: 20px;
+}
+
+.st-format-btn {
+  border-radius: 0;
+  box-shadow: none;
+  cursor: pointer;
+  line-height: normal;
+  min-width: 33px;
+  text-shadow: none;
+
+  &:hover {
+    background: none !important;
+    color: $green;
+  }
+}
+
+// Adjust colors to fit with ActiveAdmin
+a.st-block-control {
+  color: $dark-gray;
+
+  &:hover {
+    color: $green;
+  }
+}
+
+.st-block-controls__top:hover:before {
+  color: $green;
+}
+
+.st-block--with-plus:after {
+  color: $green;
+}
+
+.st-block__inner {
+  &:hover {
+    border-color: $green;
+  }
+
+  ::selection {
+    background: $light-green;
+  }
+}
+
+.st-block--with-errors .st-block__inner,
+.st-block--delete-active .st-block__inner {
+  border-color: $red;
+}
+
+.st-block-ui-btn {
+  &:hover {
+    background-color: $green;
+  }
+
+  color: $green;
+  border-color: $green;
+}
