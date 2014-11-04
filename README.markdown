@@ -8,7 +8,7 @@ Usage
 
 Add it to your `Gemfile`:
 
-    gem 'belmont', git: 'vigetlabs/belmont'
+    gem 'belmont', github: 'vigetlabs/belmont'
 
 Install:
 
